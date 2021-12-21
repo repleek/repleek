@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Home from "components/Home";
 
-const index = () => {
+const home = () => {
   return (
     <>
       <Head>
@@ -15,4 +15,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default home;
