@@ -1,0 +1,6 @@
+{
+  "name": "my-next-website",
+  "alias": "my-next-website",
+  "type": "static",
+  "root": "./templates/create-next-app"
+}
