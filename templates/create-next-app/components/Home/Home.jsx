@@ -66,7 +66,16 @@ Home.defaultProps = {
     noWrap: false,
     variant: "body1",
   },
-  HiG0P2GoR: { maxWidth: "sm", disableGutters: false, fixed: false },
+  HiG0P2GoR: {
+    maxWidth: "sm",
+    disableGutters: false,
+    fixed: false,
+    css: {
+      display: "flex",
+      justifyContent: "space-evenly",
+      alignItems: "center",
+    },
+  },
   yb880Di_U: {
     text: "Simple mui button",
     type: "button",
