@@ -94,10 +94,10 @@
     "@babel/helper-validator-identifier" "^7.15.7"
     to-fast-properties "^2.0.0"
 
-"@billers/library@^0.0.4-64":
-  version "0.0.4-64"
-  resolved "https://registry.yarnpkg.com/@billers/library/-/library-0.0.4-64.tgz#9d1fad886e14377b5ad4531a7c136e1b68f174fc"
-  integrity sha512-OIVLIE64S3py3dw3oK+i78oo03P11mztPl5p/UgBIDEqG+295SpCSItIlCs6iF/VSlhOmOIjGEcKMGLnmmoKtw==
+"@billers/library@^0.0.5-2":
+  version "0.0.5-2"
+  resolved "https://registry.yarnpkg.com/@billers/library/-/library-0.0.5-2.tgz#de19d147695a661151b3964b6f5303dd83496967"
+  integrity sha512-egDmz1uTeVrlmm9lInTwAsx+oAEULXbyakvQtTRjLUD2Ed25gpU8YjbqfARPF7X1fX1nxjZz7INHaxYLTeFJww==
   dependencies:
     "@emotion/react" "^11.7.0"
     "@emotion/styled" "^11.6.0"
