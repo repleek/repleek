@@ -1,4 +1,4 @@
 {
   "name": "CNA",
-  "dataPath": "components"
+  "directory": "components"
 }

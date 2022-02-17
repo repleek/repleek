@@ -175,7 +175,7 @@ Home.defaultProps = {
   },
   "0nMEunN0Z": {
     alt: "Image description for better SEO",
-    src: "/Capture.jpg",
+    src: "https://dbuilder.vercel.app/screen-shoot.png",
     dynamic: true,
     css: {
       width: "100%",
