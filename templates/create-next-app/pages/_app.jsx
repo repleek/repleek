@@ -10,6 +10,7 @@ import LocalizationProvider from "@mui/lab/LocalizationProvider";
 import { theme, createEmotionCache } from "src/theme";
 // next router
 import { useRouter } from "next/router";
+import { RouteProvider } from "@billers/library";
 //global css or scss
 import "styles/globals.css";
 
