@@ -28,3 +28,16 @@
 .suggestion-slide {
   animation: toggleIn 1s 1;
 }
+
+.home-page {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+
+.suggestion-bg {
+  transform-style: preserve-3d;
+  transform: translateZ(-10px) scale(2);
+  z-index: -1;
+}

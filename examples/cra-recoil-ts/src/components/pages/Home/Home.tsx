@@ -11,10 +11,10 @@ const Home = (props) => {
         <Container {...props["66PNrjvA1"]}>
           <Box {...props["C_zPYzLjO"]} {...SuggestionList} />
         </Container>
+        <Container {...props["2edjCYtLO"]}>
+          <Box {...props["VfXTw2k2o"]} {...MovieList} />
+        </Container>
       </Box>
-      <Container {...props["2edjCYtLO"]}>
-        <Box {...props["VfXTw2k2o"]} {...MovieList} />
-      </Container>
     </Box>
   );
 };
@@ -24,11 +24,13 @@ export default Home;
 Home.defaultProps = {
   ROOT: {
     tag: "div",
+    className: "home-page",
     css: {
       paddingTop: "0px",
       paddingRight: "0px",
       paddingBottom: "0px",
       paddingLeft: "0px",
+      background: "#121212",
     },
   },
   C_zPYzLjO: { tag: "div", css: { minHeight: "380px" } },
