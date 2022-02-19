@@ -1,10 +1,12 @@
 {
-  "include": ["./src/**/*", "**/*.jsx"],
+  "include": ["./src/**/*", "**/*.jsx", "*"],
   "compilerOptions": {
     "strict": false,
     "esModuleInterop": true,
     "lib": ["dom", "es2015"],
     "jsx": "react-jsx",
-    "resolveJsonModule": true
+    "jsxImportSource": "@emotion/react",
+    "resolveJsonModule": true,
+    "baseUrl": "./src",
   }
 }
