@@ -1,11 +1,10 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import Nav from "./Nav";
 
 const index = () => {
-  const navigate = useNavigate();
   return (
     <div>
-
+      <Nav />
     </div>
   );
 };
