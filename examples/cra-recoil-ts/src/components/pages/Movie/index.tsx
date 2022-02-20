@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";
+import { useMovie } from "actions/movie";
 
 const Movie = () => {
-  return (
-    <div>Movie</div>
-  )
-}
+  const movie = useMovie()
+  console.log('movie: ', movie);
+  return <div>Movie</div>;
+};
 
-export default Movie
+export default Movie;

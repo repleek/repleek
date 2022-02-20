@@ -1,9 +1,9 @@
 //Generate automaticaly by dbuilder
 import React from "react";
-import { Box, Image, ButtonIcon, Icon } from "@billers/library";
+import { Box, Image, ButtonIcon, Icon, Title } from "@billers/library";
 
 const MovieCard = (props) => {
-  const { img, action } = props;
+  const { img, action, title, release_date } = props;
   return (
     <Box {...props["ROOT"]}>
       <ButtonIcon
@@ -12,6 +12,8 @@ const MovieCard = (props) => {
         {...action}
       />
       <Image {...props["-x58E9PHv"]} {...img} />
+      <Title {...props["iZqeUQLVL"]} {...title} />
+      <Title {...props["FYM4VldEx"]} {...release_date} />
     </Box>
   );
 };
@@ -25,6 +27,7 @@ MovieCard.defaultProps = {
     css: {
       width: "25%",
       position: "relative",
+      textAlign: "center",
       marginTop: "16px",
       paddingTop: "8px",
       paddingRight: "8px",
@@ -59,5 +62,24 @@ MovieCard.defaultProps = {
       "&:hover": { color: "#252675", background: "#FFFFFFCC" },
     },
   },
-  "8sKi2lkzb": { color: "inherit", icon: "FaReact", fontSize: "inherit" },
+  "8sKi2lkzb": {
+    color: "inherit",
+    icon: "FaReact",
+    fontSize: "inherit",
+    hidden: false,
+  },
+  iZqeUQLVL: {
+    variant: "h2",
+    text: "{{title}}",
+    gutterBottom: false,
+    noWrap: false,
+    css: { fontSize: "18px" },
+  },
+  FYM4VldEx: {
+    variant: "overline",
+    text: "{{release_date}}",
+    gutterBottom: false,
+    noWrap: false,
+    css: { color: "#C8C8C8" },
+  },
 };
