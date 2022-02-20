@@ -1,10 +1,10 @@
 import React from "react";
 import { useRecoilValue } from "recoil";
-import { selectedSuggestionAtom } from "store";
+import { selectedSuggestionState } from "store";
 import Suggestion from "./Suggestion";
 
 const index = () => {
-  const suggestion = useRecoilValue(selectedSuggestionAtom);
+  const suggestion = useRecoilValue(selectedSuggestionState);
   return suggestion ? (
     <Suggestion
       key={suggestion.id}

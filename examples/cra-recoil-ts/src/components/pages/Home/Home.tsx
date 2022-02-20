@@ -40,8 +40,13 @@ Home.defaultProps = {
     fixed: false,
     css: { position: "relative", display: "flex", flexDirection: "column" },
   },
-  "2edjCYtLO": { maxWidth: "md", disableGutters: false, fixed: false },
-  VfXTw2k2o: { tag: "div", css: { minHeight: "100vh" } },
+  "2edjCYtLO": {
+    maxWidth: "lg",
+    disableGutters: false,
+    fixed: false,
+    css: { marginTop: "70px", marginBottom: "70px" },
+  },
+  VfXTw2k2o: { tag: "div", css: { display: "flex", flexWrap: "wrap" } },
   _p2TBsDwu: {
     tag: "div",
     className: "suggestion-bg",
@@ -49,11 +54,6 @@ Home.defaultProps = {
   },
   Tqud0rAZb: {
     tag: "div",
-    css: {
-      position: "sticky",
-      marginTop: "-243px",
-      background: "linear-gradient(180deg, #12121200 0%, #121212 39%)",
-      zIndex: "1",
-    },
+    css: { position: "sticky", marginTop: "-243px", zIndex: "1" },
   },
 };

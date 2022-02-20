@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 import { useRecoilState, useSetRecoilState } from "recoil";
 import { getMovies } from "services/movie";
-import { selectedSuggestionAtom, suggestionsAtom } from "store";
+import { selectedSuggestionState, suggestionsState } from "store";
 
 export const useSuggestionsActions = () => {
-  const [suggestions, setSuggestions] = useRecoilState(suggestionsAtom);
-  const setSelected = useSetRecoilState(selectedSuggestionAtom);
+  const [suggestions, setSuggestions] = useRecoilState(suggestionsState);
+  const setSelected = useSetRecoilState(selectedSuggestionState);
   useEffect(() => {
     getMovies({
       url: "discover/movie",

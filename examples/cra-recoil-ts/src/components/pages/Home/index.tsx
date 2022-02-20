@@ -6,7 +6,7 @@ import { useSuggestionsActions } from "actions/suggestions";
 
 const index = () => {
   useSuggestionsActions();
-
+  
   return (
     <Home
       Suggestion={{ children: <Suggestion /> }}

@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
 import Carousel from "react-material-ui-carousel";
 import { useRecoilState, useRecoilValue } from "recoil";
-import { selectedSuggestionAtom, suggestionsAtom } from "store";
+import { selectedSuggestionState, suggestionsState } from "store";
 import { Movie } from "types";
 import SuggestionCard from "./SuggestionCard";
 
@@ -17,11 +17,11 @@ const chunk = (elements: any[], perChunk: number) => {
 };
 
 const SuggestionList = () => {
-  const suggestions = useRecoilValue(suggestionsAtom);
+  const suggestions = useRecoilValue(suggestionsState);
   const suggestionsChunked =
     (suggestions.length && chunk(suggestions, 4)) || [];
 
-  const [selected, setSelected] = useRecoilState(selectedSuggestionAtom);
+  const [selected, setSelected] = useRecoilState(selectedSuggestionState);
 
   const handleSelect = (movie: Movie) => {
     setSelected(movie);
