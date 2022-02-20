@@ -64,7 +64,7 @@ MovieCard.defaultProps = {
   },
   "8sKi2lkzb": {
     color: "inherit",
-    icon: "FaReact",
+    icon: "FaHeart",
     fontSize: "inherit",
     hidden: false,
   },
