@@ -1,12 +1,22 @@
 {
   "include": ["./src/**/*", "**/*.jsx", "*"],
   "compilerOptions": {
-    "strict": false,
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
     "esModuleInterop": true,
-    "lib": ["dom", "es2015"],
+    "allowSyntheticDefaultImports": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,    
     "jsx": "react-jsx",
     "jsxImportSource": "@emotion/react",
-    "resolveJsonModule": true,
-    "baseUrl": "./src",
+    "baseUrl": "./src"
   }
 }

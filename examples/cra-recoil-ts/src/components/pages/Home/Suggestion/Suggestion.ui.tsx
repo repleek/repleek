@@ -1,17 +1,31 @@
-//Generate automaticaly by dbuilder
+// Generate automaticaly by dbuilder
 import React from "react";
-import { Box, Title, Container, Button } from "@billers/library";
+
+import { Box, Button, Container, Title } from "@billers/library";
 
 const Suggestion = (props) => {
-  const { suggestionBg, release_date, title, discover, votes } = props;
+  const {
+    ROOT,
+    suggestionBg,
+    mtyufg,
+    releaseDate,
+    wykave,
+    title,
+    eyfjxd,
+    tnjfzj,
+    discover,
+    nhywae,
+    wpokbn,
+    votes,
+  } = props;
   return (
-    <Box {...props["ROOT"]} {...suggestionBg}>
-      <Container {...props["uuPWX64Pf"]}>
-        <Box {...props["ql0CPiKlK"]}>
-          <Title {...props["WPE9CfkiK"]} {...release_date} />
-          <Title {...props["DB-g0ATHf"]} {...title} />
-          <Box {...props["xcIc0_Xh_"]} {...votes} />
-          <Button {...props["UxwqPp4wp"]} {...discover} />
+    <Box {...ROOT} {...suggestionBg}>
+      <Container {...eyfjxd}>
+        <Box {...nhywae}>
+          <Title {...mtyufg} {...releaseDate} />
+          <Title {...wykave} {...title} />
+          <Box {...wpokbn} {...votes} />
+          <Button {...tnjfzj} {...discover} />
         </Box>
       </Container>
     </Box>
@@ -29,9 +43,9 @@ Suggestion.defaultProps = {
       background: "linear-gradient(180deg, #F4F4F400 0%, #121212 88%)",
     },
   },
-  WPE9CfkiK: {
+  mtyufg: {
     variant: "h3",
-    text: "Release date : {{release_date}}",
+    text: "Release date : {{releaseDate}}",
     gutterBottom: false,
     noWrap: false,
     css: {
@@ -41,14 +55,14 @@ Suggestion.defaultProps = {
       marginBottom: "12px",
     },
   },
-  "DB-g0ATHf": {
+  wykave: {
     variant: "h1",
     text: "{{title}}",
     gutterBottom: false,
     noWrap: false,
     css: { fontSize: "58px", fontWeight: 700, marginTop: "8px" },
   },
-  uuPWX64Pf: {
+  eyfjxd: {
     maxWidth: "lg",
     disableGutters: false,
     fixed: false,
@@ -59,7 +73,7 @@ Suggestion.defaultProps = {
       justifyContent: "flex-end",
     },
   },
-  UxwqPp4wp: {
+  tnjfzj: {
     text: "Discover",
     type: "button",
     disabled: false,
@@ -79,6 +93,6 @@ Suggestion.defaultProps = {
       borderBottomRightRadius: "30px",
     },
   },
-  ql0CPiKlK: { tag: "div" },
-  xcIc0_Xh_: { tag: "div", css: { marginBottom: "16px" } },
+  nhywae: { tag: "div" },
+  wpokbn: { tag: "div", css: { marginBottom: "16px" } },
 };

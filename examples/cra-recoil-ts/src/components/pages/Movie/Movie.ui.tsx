@@ -1,34 +1,51 @@
-//Generate automaticaly by dbuilder
+// Generate automaticaly by dbuilder
 import React from "react";
+
 import {
   Box,
+  Button,
+  ButtonIcon,
   Container,
+  Icon,
   Image,
   Title,
-  Button,
-  Icon,
-  ButtonIcon,
 } from "@billers/library";
 
 const Movie = (props) => {
-  const { wrapper, img, title, favoriteButton, votes, overview } = props;
+  const {
+    ROOT,
+    wrapper,
+    qardmq,
+    brkshx,
+    hfhbxy,
+    zhomap,
+    img,
+    xfoefr,
+    title,
+    fflkjl,
+    favoriteButton,
+    auxzsf,
+    wwsvkt,
+    votes,
+    vsgwaq,
+    overview,
+    dfeqzh,
+    bkpvyy,
+  } = props;
   return (
-    <Box {...props["ROOT"]} {...wrapper}>
-      <Container {...props["s8v3MjLoF"]}>
-        <Box {...props["cPD2BT8ET"]}>
-          <Image {...props["E-zTodWs4"]} {...img} />
+    <Box {...ROOT} {...wrapper}>
+      <Container {...qardmq}>
+        <Box {...brkshx}>
+          <Image {...zhomap} {...img} />
         </Box>
-        <Box {...props["XKn_r0O8a"]}>
-          <Box {...props["kmGH7DCRX"]} {...votes} />
-          <Title {...props["V4RNxpg8L"]} {...title} />
-          <Title {...props["R60N7Na_c"]} {...overview} />
-          <ButtonIcon
-            {...props["DJzwj1Xm1"]}
-            Icon={<Icon {...props["54EWTJ-ll"]} />}
-          />
+        <Box {...hfhbxy}>
+          <Box {...wwsvkt} {...votes} />
+          <Title {...xfoefr} {...title} />
+          <Title {...vsgwaq} {...overview} />
+          <ButtonIcon {...dfeqzh} Icon={<Icon {...bkpvyy} />} />
           <Button
-            {...props["iERsnldxa"]}
-            IconStart={<Icon {...props["Lc2R8rjZk"]} />}
+            {...fflkjl}
+            IconStart={<Icon {...auxzsf} />}
             {...favoriteButton}
           />
         </Box>
@@ -45,7 +62,7 @@ Movie.defaultProps = {
     className: "overlay-black",
     css: { minHeight: "100vh", display: "flex", alignItems: "center" },
   },
-  s8v3MjLoF: {
+  qardmq: {
     maxWidth: "md",
     disableGutters: false,
     fixed: false,
@@ -65,12 +82,12 @@ Movie.defaultProps = {
       zIndex: "10",
     },
   },
-  cPD2BT8ET: { tag: "div", css: { maxWidth: "380px", display: "flex" } },
-  XKn_r0O8a: {
+  brkshx: { tag: "div", css: { maxWidth: "380px", display: "flex" } },
+  hfhbxy: {
     tag: "div",
     css: { flex: "1", paddingRight: "32px", paddingLeft: "32px" },
   },
-  "E-zTodWs4": {
+  zhomap: {
     alt: "Image description for better SEO",
     src: "https://image.tmdb.org/t/p/w500//1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
     dynamic: true,
@@ -82,14 +99,14 @@ Movie.defaultProps = {
       borderBottomRightRadius: "8px",
     },
   },
-  V4RNxpg8L: {
+  xfoefr: {
     variant: "h1",
     text: "{{title}}",
     gutterBottom: false,
     noWrap: false,
     css: { marginBottom: "8px" },
   },
-  iERsnldxa: {
+  fflkjl: {
     text: "Add to favorite",
     type: "button",
     disabled: false,
@@ -109,21 +126,21 @@ Movie.defaultProps = {
       borderBottomRightRadius: "30px",
     },
   },
-  Lc2R8rjZk: {
+  auxzsf: {
     color: "inherit",
     icon: "FaHeart",
     fontSize: "inherit",
     hidden: false,
   },
-  kmGH7DCRX: { tag: "div" },
-  R60N7Na_c: {
+  wwsvkt: { tag: "div" },
+  vsgwaq: {
     variant: "body1",
     text: "{{overview}}",
     gutterBottom: false,
     noWrap: false,
     css: { marginBottom: "12px" },
   },
-  DJzwj1Xm1: {
+  dfeqzh: {
     type: "button",
     disabled: false,
     disableFocusRipple: false,
@@ -136,7 +153,7 @@ Movie.defaultProps = {
       "&:hover": { background: "#F8F7F7C2" },
     },
   },
-  "54EWTJ-ll": {
+  bkpvyy: {
     color: "inherit",
     icon: "FaAngleLeft",
     fontSize: "inherit",

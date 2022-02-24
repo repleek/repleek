@@ -1,19 +1,27 @@
-//Generate automaticaly by dbuilder
+// Generate automaticaly by dbuilder
 import React from "react";
-import { Box, Image, ButtonIcon, Icon, Title } from "@billers/library";
+
+import { Box, ButtonIcon, Icon, Image, Title } from "@billers/library";
 
 const MovieCard = (props) => {
-  const { img, action, title, release_date } = props;
+  const {
+    ROOT,
+    tpohyp,
+    img,
+    zjdtta,
+    action,
+    smoaqf,
+    yxbnuj,
+    title,
+    dpwwdd,
+    releaseDate,
+  } = props;
   return (
-    <Box {...props["ROOT"]}>
-      <ButtonIcon
-        {...props["9dzGGxT7P"]}
-        Icon={<Icon {...props["8sKi2lkzb"]} />}
-        {...action}
-      />
-      <Image {...props["-x58E9PHv"]} {...img} />
-      <Title {...props["iZqeUQLVL"]} {...title} />
-      <Title {...props["FYM4VldEx"]} {...release_date} />
+    <Box {...ROOT}>
+      <ButtonIcon {...zjdtta} Icon={<Icon {...smoaqf} />} {...action} />
+      <Image {...tpohyp} {...img} />
+      <Title {...yxbnuj} {...title} />
+      <Title {...dpwwdd} {...releaseDate} />
     </Box>
   );
 };
@@ -35,7 +43,7 @@ MovieCard.defaultProps = {
       paddingLeft: "8px",
     },
   },
-  "-x58E9PHv": {
+  tpohyp: {
     alt: "Image description for better SEO",
     src: "https://image.tmdb.org/t/p/w500//8c4a8kE7PizaGQQnditMmI1xbRp.jpg",
     dynamic: true,
@@ -47,7 +55,7 @@ MovieCard.defaultProps = {
       borderBottomRightRadius: "8px",
     },
   },
-  "9dzGGxT7P": {
+  zjdtta: {
     type: "button",
     disabled: false,
     disableFocusRipple: false,
@@ -62,22 +70,22 @@ MovieCard.defaultProps = {
       "&:hover": { color: "#252675", background: "#FFFFFFCC" },
     },
   },
-  "8sKi2lkzb": {
+  smoaqf: {
     color: "inherit",
-    icon: "FaHeart",
+    icon: "FaRegBookmark",
     fontSize: "inherit",
     hidden: false,
   },
-  iZqeUQLVL: {
+  yxbnuj: {
     variant: "h2",
     text: "{{title}}",
     gutterBottom: false,
     noWrap: false,
     css: { fontSize: "18px" },
   },
-  FYM4VldEx: {
+  dpwwdd: {
     variant: "overline",
-    text: "{{release_date}}",
+    text: "{{releaseDate}}",
     gutterBottom: false,
     noWrap: false,
     css: { color: "#C8C8C8" },

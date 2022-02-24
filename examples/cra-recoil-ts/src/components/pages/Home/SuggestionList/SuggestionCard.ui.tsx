@@ -1,13 +1,14 @@
-//Generate automaticaly by dbuilder
+// Generate automaticaly by dbuilder
 import React from "react";
+
 import { Box, Title } from "@billers/library";
 
 const SuggestionCard = (props) => {
-  const { title, img } = props;
+  const { ROOT, abovck, title, kuwvez, img } = props;
   return (
-    <Box {...props["ROOT"]}>
-      <Box {...props["jpGGJb6-W"]} {...img} />
-      <Title {...props["2yLU7HxkD"]} {...title} />
+    <Box {...ROOT}>
+      <Box {...kuwvez} {...img} />
+      <Title {...abovck} {...title} />
     </Box>
   );
 };
@@ -29,14 +30,14 @@ SuggestionCard.defaultProps = {
       flexDirection: "column",
     },
   },
-  "2yLU7HxkD": {
+  abovck: {
     variant: "h3",
     text: "{{title}}",
     gutterBottom: false,
     noWrap: false,
     css: { fontSize: "18px", fontWeight: 600, color: "#E3E3E3" },
   },
-  "jpGGJb6-W": {
+  kuwvez: {
     tag: "div",
     className: "poster",
     css: {

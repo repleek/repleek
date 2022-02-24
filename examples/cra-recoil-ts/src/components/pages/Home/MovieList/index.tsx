@@ -1,10 +1,11 @@
-import React from "react";
-import { useInView } from "react-intersection-observer";
-import { useMovies } from "actions/movies";
-import MovieCard from "./MovieCard";
-import Skeleton from "./Skeleton";
-import { useEffect } from "react";
-import dayjs from "dayjs";
+import React, { useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
+
+import useMovies from 'actions/movies';
+import dayjs from 'dayjs';
+
+import MovieCard from './MovieCard.ui';
+import Skeleton from './Skeleton';
 
 const MovieList = () => {
   const { movies, fetchMore } = useMovies();
@@ -13,7 +14,7 @@ const MovieList = () => {
   });
 
   useEffect(() => {
-    inView && fetchMore();
+    if (inView) fetchMore();
   }, [inView]);
 
   return (
@@ -21,29 +22,27 @@ const MovieList = () => {
       {Object.values(movies)
         .flat()
         .map(({ id, poster_path, title, release_date }) => {
-          let date = dayjs().isSame(release_date, "year")
+          const date = dayjs().isSame(release_date, 'year')
             ? dayjs(release_date).fromNow()
-            : dayjs(release_date).format("DD MMMM YYYY");
+            : dayjs(release_date).format('DD MMMM YYYY');
 
           return (
             <MovieCard
-              key={id}
-              title={{ title }}
+              action
               img={{
                 src: `https://image.tmdb.org/t/p/w500/${poster_path}`,
                 href: `movie/${id}`,
               }}
+              key={id}
               release_date={{ release_date: date }}
-              action
+              title={{ title }}
             />
           );
         })}
       <Skeleton ref={ref} />
-      {Array(3)
-        .fill(0)
-        .map((_, i) => (
-          <Skeleton key={i} />
-        ))}
+      {[1, 2, 3].map((i) => (
+        <Skeleton key={i} />
+      ))}
     </>
   );
 };

@@ -1,15 +1,16 @@
-import { useEffect } from "react";
-import { useRecoilState, useSetRecoilState } from "recoil";
-import { getMovies } from "services/movie";
-import { selectedSuggestionState, suggestionsState } from "store";
+import { useEffect } from 'react';
 
-export const useSuggestionsActions = () => {
+import { useRecoilState, useSetRecoilState } from 'recoil';
+import { getMovies } from 'services/movie';
+import { selectedSuggestionState, suggestionsState } from 'store';
+
+const useSuggestionsActions = () => {
   const [suggestions, setSuggestions] = useRecoilState(suggestionsState);
   const setSelected = useSetRecoilState(selectedSuggestionState);
   useEffect(() => {
     getMovies({
-      url: "discover/movie",
-      method: "GET",
+      url: 'discover/movie',
+      method: 'GET',
       params: {},
     }).then((res) => {
       if (res.length) {
@@ -17,7 +18,9 @@ export const useSuggestionsActions = () => {
         setSelected(res[0]);
       }
     });
-  }, []);
+  });
 
   return suggestions;
 };
+
+export default useSuggestionsActions;

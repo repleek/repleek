@@ -1,25 +1,27 @@
-import React, { Suspense } from "react";
-import Carousel from "react-material-ui-carousel";
-import { useRecoilState, useRecoilValue } from "recoil";
-import { selectedSuggestionState, suggestionsState } from "store";
-import { Movie } from "types";
-import SuggestionCard from "./SuggestionCard";
+import React, { Suspense } from 'react';
+import Carousel from 'react-material-ui-carousel';
 
-const chunk = (elements: any[], perChunk: number) => {
-  return elements.reduce((resultArray, item, index) => {
+import { useRecoilState, useRecoilValue } from 'recoil';
+import { selectedSuggestionState, suggestionsState } from 'store';
+import { Movie } from 'types';
+
+import SuggestionCard from './SuggestionCard.ui';
+
+const chunk = (elements: any[], perChunk: number) =>
+  elements.reduce((resultArray, item, index) => {
     const chunkIndex = Math.floor(index / perChunk);
+
     if (!resultArray[chunkIndex]) {
-      resultArray[chunkIndex] = [];
+      resultArray[chunkIndex] = { index: chunkIndex, items: [] };
     }
-    resultArray[chunkIndex].push(item);
+    resultArray[chunkIndex].items.push(item);
     return resultArray;
   }, []);
-};
 
 const SuggestionList = () => {
   const suggestions = useRecoilValue(suggestionsState);
   const suggestionsChunked =
-    (suggestions.length && chunk(suggestions, 4)) || [];
+  (suggestions.length && chunk(suggestions, 4)) || [];
 
   const [selected, setSelected] = useRecoilState(selectedSuggestionState);
 
@@ -30,30 +32,30 @@ const SuggestionList = () => {
   return (
     <Suspense fallback="chargement">
       <Carousel
-        stopAutoPlayOnHover
-        autoPlay={false}
-        navButtonsAlwaysVisible
-        swipe={false}
-        cycleNavigation={false}
-        indicators={false}
         animation="slide"
+        autoPlay={false}
+        cycleNavigation={false}
         duration={300}
-        >
-        {suggestionsChunked.map((slides: Movie[], i: number) => (
-          <div key={i} css={{ display: "flex" }}>
-            {slides.map((movie: Movie) => {
-              const { title, poster_path, id } = movie;
+        indicators={false}
+        navButtonsAlwaysVisible
+        stopAutoPlayOnHover
+        swipe={false}
+      >
+        {suggestionsChunked.map(({index, items}) => (
+          <div css={{ display: 'flex' }} key={index}>
+            {items.map((movie: Movie) => {
+              const { title, id } = movie;
               return (
                 <SuggestionCard
-                  key={id}
-                  title={{ title }}
                   img={{
                     style: {
-                      background: `center / cover no-repeat url("https://image.tmdb.org/t/p/w500/${poster_path}")`
+                      background: `center / cover no-repeat url("https://image.tmdb.org/t/p/w500/${movie.poster_path}")`,
                     },
-                    className: id === selected?.id ? "selected" : "",
+                    className: id === selected?.id ? 'selected' : '',
                     onClick: () => handleSelect(movie),
                   }}
+                  key={id}
+                  title={{ title }}
                 />
               );
             })}

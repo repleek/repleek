@@ -1,11 +1,13 @@
 import "./assets/styles.css";
-import { RecoilRoot } from "recoil";
-import { Routes, Route, useNavigate } from "react-router-dom";
+import { Route, Routes, useNavigate } from "react-router-dom";
+
 import { RouteProvider } from "@billers/library";
+import ErrorBoundary from "components/shared/ErrorBoundary";
+import { RecoilRoot } from "recoil";
+
+import Nav from "./components/layout/Nav";
 import Home from "./components/pages/Home";
 import Movie from "./components/pages/Movie";
-import Nav from "./components/layout/Nav";
-import ErrorBoundary from "components/shared/ErrorBoundary";
 
 const App = () => {
   const push = useNavigate();
@@ -15,8 +17,8 @@ const App = () => {
         <RouteProvider push={push}>
           <Nav />
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/movie/:id" element={<Movie />} />
+            <Route element={<Home />} path="/" />
+            <Route element={<Movie />} path="/movie/:id" />
           </Routes>
         </RouteProvider>
       </RecoilRoot>

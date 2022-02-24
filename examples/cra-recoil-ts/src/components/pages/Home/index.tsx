@@ -1,19 +1,20 @@
-import Home from "./Home";
-import SuggestionList from "./SuggestionList";
-import MovieList from "./MovieList";
-import Suggestion from "./Suggestion";
-import { useSuggestionsActions } from "actions/suggestions";
+import useSuggestionsActions from 'actions/suggestions';
 
-const index = () => {
+import Home from './Home.ui';
+import MovieList from './MovieList';
+import Suggestion from './Suggestion';
+import SuggestionList from './SuggestionList';
+
+const Index = () => {
   useSuggestionsActions();
-  
+
   return (
     <Home
+      MovieList={{ children: <MovieList /> }}
       Suggestion={{ children: <Suggestion /> }}
       SuggestionList={{ children: <SuggestionList /> }}
-      MovieList={{ children: <MovieList /> }}
     />
   );
 };
 
-export default index;
+export default Index;

@@ -1,14 +1,15 @@
-import { useEffect } from "react";
-import { useRecoilState } from "recoil";
-import { getMovies } from "services/movie";
-import { moviesListState, pageState } from "store";
+import { useEffect } from 'react';
 
-export const useMovies = () => {
+import { useRecoilState } from 'recoil';
+import { getMovies } from 'services/movie';
+import { moviesListState, pageState } from 'store';
+
+const useMovies = () => {
   const [page, setPage] = useRecoilState(pageState);
   const [movies, setMovies] = useRecoilState(moviesListState);
 
   useEffect(() => {
-    getMovies({ method: "GET", url: "discover/movie", params: { page } }).then(
+    getMovies({ method: 'GET', url: 'discover/movie', params: { page } }).then(
       (res) => {
         const movieList = {};
         movieList[page] = res;
@@ -22,3 +23,5 @@ export const useMovies = () => {
   };
   return { movies, fetchMore };
 };
+
+export default useMovies;

@@ -1,29 +1,32 @@
-//Generate automaticaly by dbuilder
+// Generate automaticaly by dbuilder
 import React from "react";
+
 import { Box, ButtonIcon, Icon, Image } from "@billers/library";
 
 const Nav = (props) => {
+  const {
+    ROOT,
+    vkpcay,
+    tzmoje,
+    ouukwn,
+    konzxl,
+    pzzhdc,
+    isszod,
+    dmehad,
+    wdmhct,
+    gtrxsv,
+    wbigrh,
+    hodaxq,
+  } = props;
   return (
-    <Box {...props["ROOT"]}>
-      <Box {...props["NfQ4bBfUD"]}>
-        <Image {...props["F61L_411z"]} />
-        <Box {...props["DQxGiyuHS"]}>
-          <ButtonIcon
-            {...props["-x66Un6pL"]}
-            Icon={<Icon {...props["XKqXOcDYG"]} />}
-          />
-          <ButtonIcon
-            {...props["eyU3cvoDQ"]}
-            Icon={<Icon {...props["mgrdV1zJY"]} />}
-          />
-          <ButtonIcon
-            {...props["LeqgQ3N0D"]}
-            Icon={<Icon {...props["Sv00u7b7g"]} />}
-          />
-          <ButtonIcon
-            {...props["aGdUkVBcQ"]}
-            Icon={<Icon {...props["2eUfxNhK1"]} />}
-          />
+    <Box {...ROOT}>
+      <Box {...vkpcay}>
+        <Image {...gtrxsv} />
+        <Box {...konzxl}>
+          <ButtonIcon {...dmehad} Icon={<Icon {...wdmhct} />} />
+          <ButtonIcon {...pzzhdc} Icon={<Icon {...isszod} />} />
+          <ButtonIcon {...tzmoje} Icon={<Icon {...ouukwn} />} />
+          <ButtonIcon {...wbigrh} Icon={<Icon {...hodaxq} />} />
         </Box>
       </Box>
     </Box>
@@ -44,7 +47,7 @@ Nav.defaultProps = {
       justifyContent: "flex-end",
     },
   },
-  NfQ4bBfUD: {
+  vkpcay: {
     tag: "div",
     css: {
       borderTopLeftRadius: "110px",
@@ -62,7 +65,7 @@ Nav.defaultProps = {
       alignItems: "center",
     },
   },
-  LeqgQ3N0D: {
+  tzmoje: {
     type: "button",
     disabled: false,
     disableFocusRipple: false,
@@ -70,40 +73,40 @@ Nav.defaultProps = {
     size: "medium",
     color: "secondary",
   },
-  Sv00u7b7g: {
+  ouukwn: {
     color: "inherit",
     icon: "FaLinkedinIn",
     fontSize: "inherit",
     hidden: false,
   },
-  DQxGiyuHS: { tag: "div" },
-  eyU3cvoDQ: {
+  konzxl: { tag: "div" },
+  pzzhdc: {
     type: "button",
     disabled: false,
     disableFocusRipple: false,
     disableRipple: false,
     color: "secondary",
   },
-  mgrdV1zJY: {
+  isszod: {
     color: "inherit",
     icon: "FaInstagram",
     fontSize: "inherit",
     hidden: false,
   },
-  "-x66Un6pL": {
+  dmehad: {
     type: "button",
     disabled: false,
     disableFocusRipple: false,
     disableRipple: false,
     color: "secondary",
   },
-  XKqXOcDYG: {
+  wdmhct: {
     color: "inherit",
     icon: "FaGithub",
     fontSize: "inherit",
     hidden: false,
   },
-  F61L_411z: {
+  gtrxsv: {
     alt: "Image description for better SEO",
     src: "https://minio.billers.io/billers/app_v2/Me_25ff08b932.png",
     dynamic: true,
@@ -119,14 +122,14 @@ Nav.defaultProps = {
       background: "#FFFFFF57",
     },
   },
-  aGdUkVBcQ: {
+  wbigrh: {
     type: "button",
     disabled: false,
     disableFocusRipple: false,
     disableRipple: false,
     color: "secondary",
   },
-  "2eUfxNhK1": {
+  hodaxq: {
     color: "inherit",
     icon: "FaPaperPlane",
     fontSize: "inherit",
