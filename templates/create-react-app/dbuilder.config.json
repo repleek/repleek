@@ -1,6 +1,0 @@
-{
-  "name": "Moovies",
-  "directory": "src",
-  "ext": ".tsx",
-  "toTsx": true
-}
