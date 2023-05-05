@@ -9,15 +9,22 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.8",
+    "@emotion/styled": "^11.10.8",
+    "@mui/material": "^5.12.3",
     "@types/node": "18.15.0",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
-    "dbuilder-library-ts": "0.1.3",
+    "dbuilder-library-ts": "latest",
     "eslint": "8.35.0",
     "eslint-config-next": "13.2.4",
+    "i18next": "^22.4.15",
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hook-form": "^7.43.9",
+    "react-i18next": "^12.2.2",
+    "react-icons": "^4.8.0",
     "typescript": "4.9.5"
   }
 }

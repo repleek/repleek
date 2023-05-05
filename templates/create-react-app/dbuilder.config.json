@@ -1,0 +1,25 @@
+{
+  "name": "create-react-app",
+  "paths": {
+    "library": "src/library",
+    "theme": "src/theme/mui.theme.json",
+    "assets": "public"
+  },
+  "description": "",
+  "i18n": {
+    "supports": [
+      {
+        "value": "gb",
+        "label": "England"
+      },
+      {
+        "value": "fr",
+        "label": "France"
+      },
+      {
+        "value": "es",
+        "label": "Spain"
+      }
+    ]
+  }
+}
