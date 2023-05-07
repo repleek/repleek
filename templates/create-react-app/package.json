@@ -4,15 +4,19 @@
   "private": true,
   "dependencies": {
     "dbuilder-library-ts": "latest",
+    "i18next": "^22.4.15",
     "react": "^18.2.0",
+    "react-hook-form": "^7.43.9",
     "react-dom": "^18.2.0",
+    "react-i18next": "^12.2.2",
     "react-router-dom": "^6.11.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "test": "craco test"
+    "test": "craco test",
+    "extract-translations": "i18next -c i18next-parser.config.js"
   },
   "eslintConfig": {
     "extends": [

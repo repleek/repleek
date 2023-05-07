@@ -1,22 +1,21 @@
 import React from "react";
-import { MuiProvider, RouteProvider } from "dbuilder-library-ts";
+import { DbuilderProvider } from "dbuilder-library-ts";
 import pages from "@/pages";
 import { theme } from "@/theme";
+import i18n from "@/locales/i18n";
 import { Route, Routes, useNavigate } from "react-router-dom";
 
 const App: React.FC = () => {
   const push = useNavigate();
 
   return (
-    <RouteProvider push={push}>
-      <MuiProvider theme={theme}>
-        <Routes>
-          {pages.map(({ path, page }) => (
-            <Route element={page} path={path} />
-          ))}
-        </Routes>
-      </MuiProvider>
-    </RouteProvider>
+    <DbuilderProvider push={push} theme={theme} i18n={i18n}>
+      <Routes>
+        {pages.map(({ path, page }) => (
+          <Route element={page} path={path} />
+        ))}
+      </Routes>
+    </DbuilderProvider>
   );
 };
 

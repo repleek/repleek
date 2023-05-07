@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "extract-translations": "i18next -c i18next-parser.config.js"
   },
   "dependencies": {
     "@emotion/react": "^11.10.8",
