@@ -2,6 +2,7 @@ import React from "react";
 import { Footer, Home, ModalContent } from "@/library";
 import { Dialog } from "@mui/material";
 import { useCallback, useState } from "react";
+import { useColorMode } from "@repleek/mui";
 
 type Values = {
   email: string;
@@ -19,6 +20,9 @@ const HomePage: React.FC = () => {
     setValues(values);
     setOpen(true);
   }, []);
+
+  const { mode } = useColorMode();
+  console.log("mode: ", mode);
 
   return (
     <>

@@ -1,10 +1,11 @@
-import createCache from '@emotion/cache';
-import { createTheme, ThemeOptions } from '@mui/material/styles';
+import { createTheme, ThemeOptions } from "@mui/material/styles";
 
-import data from './mui.theme.json';
+import dark from "./dark.json";
+import light from "./light.json";
 
-export const theme = createTheme(data as ThemeOptions);
-
-export const createEmotionCache = () => {
-  return createCache({ key: 'css' });
+const themes = {
+  light: createTheme(light as ThemeOptions),
+  dark: createTheme(dark as ThemeOptions),
 };
+
+export default themes;

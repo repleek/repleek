@@ -7,24 +7,24 @@ import {
   BoxProps,
   Icon,
   IconProps,
-  Title,
-  TitleProps,
-} from "dbuilder-library-ts";
+  Typography,
+  TypographyProps,
+} from "@repleek/mui";
 
 /** IMPORT End */
 
 /** TYPE DEFINITION Start */
 type ModalContentProps = {
-  email: TitleProps & {
-    email?: string,
-  },
+  email: TypographyProps & {
+    email?: string;
+  };
 };
 
 type DefaultProps = {
-  ROOT: BoxProps,
-  heyfax: TitleProps,
-  mvdesp: IconProps,
-  bsmsna: BoxProps,
+  ROOT: BoxProps;
+  heyfax: TypographyProps;
+  mvdesp: IconProps;
+  bsmsna: BoxProps;
 };
 
 /** TYPE DEFINITION End */
@@ -38,7 +38,7 @@ const ModalContent: React.FC<ModalContentProps> = (props) => {
     <Box {...ROOT}>
       <Icon {...mvdesp} />
       <Box {...bsmsna}>
-        <Title {...heyfax} {...email} />
+        <Typography {...heyfax} {...email} />
       </Box>
     </Box>
   );

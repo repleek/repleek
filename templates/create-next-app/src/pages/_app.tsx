@@ -1,5 +1,5 @@
 import type { AppProps } from "next/app";
-import { DbuilderProvider } from "dbuilder-library-ts";
+import { DbuilderProvider } from "@repleek/mui";
 import { theme } from "@/theme";
 import i18n from "@/locales/i18n";
 import { useRouter } from "next/router";

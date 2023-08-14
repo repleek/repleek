@@ -13,9 +13,9 @@ import {
   FormProps,
   InputBase,
   InputBaseProps,
-  Title,
-  TitleProps,
-} from "dbuilder-library-ts";
+  Typography,
+  TypographyProps,
+} from "@repleek/mui";
 
 /** IMPORT End */
 
@@ -26,16 +26,16 @@ type HomeProps = {
 
 type DefaultProps = {
   ROOT: BoxProps,
-  ovnqos: BoxProps,
-  kwfgco: TitleProps,
-  bflkuo: ContainerProps,
-  xslrhy: TitleProps,
-  wppuqs: TitleProps,
-  ieaesx: TitleProps,
-  bqaimm: FormProps,
-  kxdxjl: InputBaseProps,
-  qhvdgg: ContainerProps,
-  ynzysu: ButtonProps,
+  tbubte: BoxProps,
+  kbtley: TypographyProps,
+  pjiobm: ContainerProps,
+  ivembl: TypographyProps,
+  qcmmqx: TypographyProps,
+  dezvyf: TypographyProps,
+  pidqzc: FormProps,
+  dcvwdy: InputBaseProps,
+  rronoc: ContainerProps,
+  fsvcke: ButtonProps,
 };
 
 /** TYPE DEFINITION End */
@@ -45,32 +45,32 @@ const Home: React.FC<HomeProps> = (props) => {
   const { waitingForm } = props;
   const {
     ROOT,
-    ovnqos,
-    kwfgco,
-    bflkuo,
-    xslrhy,
-    wppuqs,
-    ieaesx,
-    bqaimm,
-    kxdxjl,
-    qhvdgg,
-    ynzysu,
+    tbubte,
+    kbtley,
+    pjiobm,
+    ivembl,
+    qcmmqx,
+    dezvyf,
+    pidqzc,
+    dcvwdy,
+    rronoc,
+    fsvcke,
   } = defaultProps;
 
   return (
     <Box {...ROOT}>
-      <Box {...ovnqos}>
-        <Container {...bflkuo}>
-          <Title {...kwfgco} />
-          <Title {...xslrhy} />
-          <Title {...wppuqs} />
+      <Box {...tbubte}>
+        <Container {...pjiobm}>
+          <Typography {...kbtley} />
+          <Typography {...ivembl} />
+          <Typography {...qcmmqx} />
         </Container>
       </Box>
-      <Container {...qhvdgg}>
-        <Title {...ieaesx} />
-        <Form {...bqaimm} {...waitingForm}>
-          <InputBase {...kxdxjl} />
-          <Button {...ynzysu} />
+      <Container {...rronoc}>
+        <Typography {...dezvyf} />
+        <Form {...pidqzc} {...waitingForm}>
+          <InputBase {...dcvwdy} />
+          <Button {...fsvcke} />
         </Form>
       </Container>
     </Box>
@@ -84,7 +84,7 @@ export default Home;
 /** DEFAULT PROPS Start */
 const defaultProps: DefaultProps = {
   ROOT: { tag: "div" },
-  ovnqos: {
+  tbubte: {
     tag: "div",
     css: {
       minHeight: "100vh",
@@ -93,7 +93,7 @@ const defaultProps: DefaultProps = {
       alignItems: "center",
     },
   },
-  kwfgco: {
+  kbtley: {
     variant: "h1",
     text: "Build webapp",
     gutterBottom: false,
@@ -108,13 +108,13 @@ const defaultProps: DefaultProps = {
       "@media (max-width: 700px)": { fontSize: "40px" },
     },
   },
-  bflkuo: {
+  pjiobm: {
     maxWidth: "md",
     disableGutters: false,
     fixed: false,
     css: { textAlign: "center" },
   },
-  xslrhy: {
+  ivembl: {
     variant: "h1",
     text: "faster than ever",
     gutterBottom: false,
@@ -125,7 +125,7 @@ const defaultProps: DefaultProps = {
       "@media (max-width: 700px)": { fontSize: "40px" },
     },
   },
-  wppuqs: {
+  qcmmqx: {
     variant: "body1",
     text: "Create beautiful UI, generate clean code, and deploy to the app stores or web in one click. Fully extensible with custom code.",
     gutterBottom: false,
@@ -137,7 +137,7 @@ const defaultProps: DefaultProps = {
       "@media (max-width: 700px)": { fontSize: "17px" },
     },
   },
-  ieaesx: {
+  dezvyf: {
     variant: "h2",
     text: "Join our waiting list",
     gutterBottom: false,
@@ -151,11 +151,16 @@ const defaultProps: DefaultProps = {
       "@media (max-width: 700px)": { fontSize: "40px" },
     },
   },
-  bqaimm: {
+  pidqzc: {
     mode: "onSubmit",
-    css: { width: "420px", display: "flex", alignItems: "center" },
+    css: {
+      width: "420px",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+    },
   },
-  kxdxjl: {
+  dcvwdy: {
     inputName: "email",
     color: "primary",
     type: "email",
@@ -163,7 +168,7 @@ const defaultProps: DefaultProps = {
     placeholder: "email@example.com",
     autoFocus: false,
     disabled: false,
-    fullWidth: true,
+    fullWidth: false,
     maxRows: 1,
     minRows: 1,
     rows: 1,
@@ -173,15 +178,15 @@ const defaultProps: DefaultProps = {
     size: "medium",
     css: {
       backgroundColor: "rgba(64, 77, 84, 0.05)",
-      boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px  ",
       paddingLeft: "12px",
       paddingRight: "8px",
       paddingTop: "8px",
       paddingBottom: "8px",
       borderRadius: "4px",
+      flexGrow: "1",
     },
   },
-  qhvdgg: {
+  rronoc: {
     maxWidth: "md",
     disableGutters: false,
     fixed: false,
@@ -193,7 +198,7 @@ const defaultProps: DefaultProps = {
       justifyContent: "center",
     },
   },
-  ynzysu: {
+  fsvcke: {
     text: "Register",
     type: "submit",
     disabled: false,

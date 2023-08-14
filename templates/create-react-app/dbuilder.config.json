@@ -2,9 +2,14 @@
 	"name": "create-react-app",
 	"paths": {
 		"library": "src/library",
-		"theme": "src/theme/mui.theme.json",
+		"theme": {
+			"light": "src/theme/light.json",
+			"dark": "src/theme/dark.json"
+		},
 		"assets": "public",
-		"locales": "src/locales"
+		"locales": "src/locales",
+		"theme.dark": "src/theme/dark.json",
+		"theme.light": "src/theme/light.json"
 	},
 	"description": "",
 	"i18n": {
@@ -22,5 +27,8 @@
 				"label": "Spain"
 			}
 		]
+	},
+	"versions": {
+		"builder": "0.1.11"
 	}
 }

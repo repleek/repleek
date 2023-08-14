@@ -1,26 +1,33 @@
 {
-  "name": "create-next-app",
-  "paths": {
-    "library": "src/library",
-    "theme": "src/theme/mui.theme.json",
-    "assets": "public",
-    "locales": "src/locales"
-  },
-  "description": "",
-  "i18n": {
-    "supports": [
-      {
-        "value": "gb",
-        "label": "England"
-      },
-      {
-        "value": "fr",
-        "label": "France"
-      },
-      {
-        "value": "es",
-        "label": "Spain"
-      }
-    ]
-  }
+	"name": "create-next-app",
+	"paths": {
+		"library": "src/library",
+		"theme": "src/theme/mui.theme.json",
+		"assets": "public",
+		"locales": "src/locales"
+	},
+	"description": "",
+	"i18n": {
+		"supports": [
+			{
+				"value": "gb",
+				"label": "England"
+			},
+			{
+				"value": "fr",
+				"label": "France"
+			},
+			{
+				"value": "es",
+				"label": "Spain"
+			},
+			{
+				"value": "al",
+				"label": "Albania"
+			}
+		]
+	},
+	"versions": {
+		"builder": "0.1.11"
+	}
 }

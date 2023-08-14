@@ -13,29 +13,29 @@ import {
   FormProps,
   InputBase,
   InputBaseProps,
-  Title,
-  TitleProps,
-} from "dbuilder-library-ts";
+  Typography,
+  TypographyProps,
+} from "@repleek/mui";
 
 /** IMPORT End */
 
 /** TYPE DEFINITION Start */
 type HomeProps = {
-  waitingForm: FormProps,
+  waitingForm: FormProps;
 };
 
 type DefaultProps = {
-  ROOT: BoxProps,
-  ovnqos: BoxProps,
-  kwfgco: TitleProps,
-  bflkuo: ContainerProps,
-  xslrhy: TitleProps,
-  wppuqs: TitleProps,
-  ieaesx: TitleProps,
-  bqaimm: FormProps,
-  kxdxjl: InputBaseProps,
-  qhvdgg: ContainerProps,
-  ynzysu: ButtonProps,
+  ROOT: BoxProps;
+  ovnqos: BoxProps;
+  kwfgco: TypographyProps;
+  bflkuo: ContainerProps;
+  xslrhy: TypographyProps;
+  wppuqs: TypographyProps;
+  ieaesx: TypographyProps;
+  bqaimm: FormProps;
+  kxdxjl: InputBaseProps;
+  qhvdgg: ContainerProps;
+  ynzysu: ButtonProps;
 };
 
 /** TYPE DEFINITION End */
@@ -61,13 +61,13 @@ const Home: React.FC<HomeProps> = (props) => {
     <Box {...ROOT}>
       <Box {...ovnqos}>
         <Container {...bflkuo}>
-          <Title {...kwfgco} />
-          <Title {...xslrhy} />
-          <Title {...wppuqs} />
+          <Typography {...kwfgco} />
+          <Typography {...xslrhy} />
+          <Typography {...wppuqs} />
         </Container>
       </Box>
       <Container {...qhvdgg}>
-        <Title {...ieaesx} />
+        <Typography {...ieaesx} />
         <Form {...bqaimm} {...waitingForm}>
           <InputBase {...kxdxjl} />
           <Button {...ynzysu} />

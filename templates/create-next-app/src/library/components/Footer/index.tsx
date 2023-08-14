@@ -2,7 +2,7 @@
 /** IMPORT Start */
 import React from "react";
 
-import { Box, BoxProps, Title, TitleProps } from "dbuilder-library-ts";
+import { Box, BoxProps, Typography, TypographyProps } from "@repleek/mui";
 
 /** IMPORT End */
 
@@ -10,19 +10,19 @@ import { Box, BoxProps, Title, TitleProps } from "dbuilder-library-ts";
 type FooterProps = {};
 
 type DefaultProps = {
-  ROOT: BoxProps,
-  htzoel: TitleProps,
+  ROOT: BoxProps;
+  qkpceq: TypographyProps;
 };
 
 /** TYPE DEFINITION End */
 
 /** COMPONENT Start */
 const Footer: React.FC<FooterProps> = (props) => {
-  const { ROOT, htzoel } = defaultProps;
+  const { ROOT, qkpceq } = defaultProps;
 
   return (
     <Box {...ROOT}>
-      <Title {...htzoel} />
+      <Typography {...qkpceq} />
     </Box>
   );
 };
@@ -42,7 +42,7 @@ const defaultProps: DefaultProps = {
       paddingBottom: "8px",
     },
   },
-  htzoel: {
+  qkpceq: {
     variant: "overline",
     text: "Copyright © 2023 dbuilder. All rights reserved. ",
     gutterBottom: false,
