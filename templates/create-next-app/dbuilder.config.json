@@ -2,7 +2,10 @@
 	"name": "create-next-app",
 	"paths": {
 		"library": "src/library",
-		"theme": "src/theme/mui.theme.json",
+		"theme": {
+			"light": "src/theme/light.json",
+			"dark": "src/theme/dark.json"
+		},
 		"assets": "public",
 		"locales": "src/locales"
 	},

@@ -1,34 +1,36 @@
 {
-	"name": "create-react-app",
-	"paths": {
-		"library": "src/library",
-		"theme": {
-			"light": "src/theme/light.json",
-			"dark": "src/theme/dark.json"
-		},
-		"assets": "public",
-		"locales": "src/locales",
-		"theme.dark": "src/theme/dark.json",
-		"theme.light": "src/theme/light.json"
-	},
-	"description": "",
-	"i18n": {
-		"supports": [
-			{
-				"value": "gb",
-				"label": "England"
-			},
-			{
-				"value": "fr",
-				"label": "France"
-			},
-			{
-				"value": "es",
-				"label": "Spain"
-			}
-		]
-	},
-	"versions": {
-		"builder": "0.1.11"
-	}
+  "name": "create-react-app",
+  "paths": {
+    "library": "src/library",
+    "theme": {
+      "light": "src/theme/light.json",
+      "dark": "src/theme/dark.json"
+    },
+    "assets": "public",
+    "locales": "src/locales"
+  },
+  "description": "",
+  "i18n": {
+    "supports": [
+      {
+        "value": "gb",
+        "label": "England"
+      },
+      {
+        "value": "fr",
+        "label": "France"
+      },
+      {
+        "value": "es",
+        "label": "Spain"
+      },
+      {
+        "value": "am",
+        "label": "Armenia"
+      }
+    ]
+  },
+  "versions": {
+    "builder": "0.1.11"
+  }
 }
