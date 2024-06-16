@@ -1,5 +1,6 @@
-/** Generated automaticaly by dbuilder */
+/** Generated automaticaly by repleek */
 /** IMPORT Start */
+"use client";
 import React from "react";
 
 import {
@@ -26,16 +27,16 @@ type HomeProps = {
 
 type DefaultProps = {
   ROOT: BoxProps,
-  tbubte: BoxProps,
-  kbtley: TypographyProps,
-  pjiobm: ContainerProps,
-  ivembl: TypographyProps,
-  qcmmqx: TypographyProps,
-  dezvyf: TypographyProps,
-  pidqzc: FormProps,
-  dcvwdy: InputBaseProps,
-  rronoc: ContainerProps,
-  fsvcke: ButtonProps,
+  wfumxw: BoxProps,
+  nridec: TypographyProps,
+  pnsgkf: ContainerProps,
+  uvrpcp: TypographyProps,
+  uyzgzn: TypographyProps,
+  fxgaww: TypographyProps,
+  eyrjaa: FormProps,
+  dkgkba: InputBaseProps,
+  jtovil: ContainerProps,
+  reolmt: ButtonProps,
 };
 
 /** TYPE DEFINITION End */
@@ -45,32 +46,32 @@ const Home: React.FC<HomeProps> = (props) => {
   const { waitingForm } = props;
   const {
     ROOT,
-    tbubte,
-    kbtley,
-    pjiobm,
-    ivembl,
-    qcmmqx,
-    dezvyf,
-    pidqzc,
-    dcvwdy,
-    rronoc,
-    fsvcke,
+    wfumxw,
+    nridec,
+    pnsgkf,
+    uvrpcp,
+    uyzgzn,
+    fxgaww,
+    eyrjaa,
+    dkgkba,
+    jtovil,
+    reolmt,
   } = defaultProps;
 
   return (
     <Box {...ROOT}>
-      <Box {...tbubte}>
-        <Container {...pjiobm}>
-          <Typography {...kbtley} />
-          <Typography {...ivembl} />
-          <Typography {...qcmmqx} />
+      <Box {...wfumxw}>
+        <Container {...pnsgkf}>
+          <Typography {...nridec} />
+          <Typography {...uvrpcp} />
+          <Typography {...uyzgzn} />
         </Container>
       </Box>
-      <Container {...rronoc}>
-        <Typography {...dezvyf} />
-        <Form {...pidqzc} {...waitingForm}>
-          <InputBase {...dcvwdy} />
-          <Button {...fsvcke} />
+      <Container {...jtovil}>
+        <Typography {...fxgaww} />
+        <Form {...eyrjaa} {...waitingForm}>
+          <InputBase {...dkgkba} />
+          <Button {...reolmt} />
         </Form>
       </Container>
     </Box>
@@ -83,17 +84,18 @@ export default Home;
 
 /** DEFAULT PROPS Start */
 const defaultProps: DefaultProps = {
-  ROOT: { tag: "div" },
-  tbubte: {
+  ROOT: {
     tag: "div",
     css: {
-      minHeight: "100vh",
-      background: "url(images/bg-hero.jpg) center / contain no-repeat scroll",
-      display: "flex",
-      alignItems: "center",
+      paddingBottom: "48px",
+      background: "url(/images/bg-hero.jpg) center / cover no-repeat fixed",
     },
   },
-  kbtley: {
+  wfumxw: {
+    tag: "div",
+    css: { minHeight: "100vh", display: "flex", alignItems: "center" },
+  },
+  nridec: {
     variant: "h1",
     text: "Build webapp",
     gutterBottom: false,
@@ -108,13 +110,13 @@ const defaultProps: DefaultProps = {
       "@media (max-width: 700px)": { fontSize: "40px" },
     },
   },
-  pjiobm: {
+  pnsgkf: {
     maxWidth: "md",
     disableGutters: false,
     fixed: false,
     css: { textAlign: "center" },
   },
-  ivembl: {
+  uvrpcp: {
     variant: "h1",
     text: "faster than ever",
     gutterBottom: false,
@@ -125,19 +127,18 @@ const defaultProps: DefaultProps = {
       "@media (max-width: 700px)": { fontSize: "40px" },
     },
   },
-  qcmmqx: {
+  uyzgzn: {
     variant: "body1",
     text: "Create beautiful UI, generate clean code, and deploy to the app stores or web in one click. Fully extensible with custom code.",
     gutterBottom: false,
     noWrap: false,
     css: {
       fontSize: "21px",
-      color: "#95a1ac",
       marginTop: "10px",
       "@media (max-width: 700px)": { fontSize: "17px" },
     },
   },
-  dezvyf: {
+  fxgaww: {
     variant: "h2",
     text: "Join our waiting list",
     gutterBottom: false,
@@ -145,13 +146,12 @@ const defaultProps: DefaultProps = {
     css: {
       fontSize: "60px",
       fontWeight: 700,
-      color: "#262d34",
       textAlign: "center",
       marginBottom: "16px",
       "@media (max-width: 700px)": { fontSize: "40px" },
     },
   },
-  pidqzc: {
+  eyrjaa: {
     mode: "onSubmit",
     css: {
       width: "420px",
@@ -160,7 +160,7 @@ const defaultProps: DefaultProps = {
       alignItems: "center",
     },
   },
-  dcvwdy: {
+  dkgkba: {
     inputName: "email",
     color: "primary",
     type: "email",
@@ -186,19 +186,18 @@ const defaultProps: DefaultProps = {
       flexGrow: "1",
     },
   },
-  rronoc: {
+  jtovil: {
     maxWidth: "md",
     disableGutters: false,
     fixed: false,
     css: {
       marginTop: "48px",
-      marginBottom: "48px",
       display: "flex",
       flexWrap: "wrap",
       justifyContent: "center",
     },
   },
-  fsvcke: {
+  reolmt: {
     text: "Register",
     type: "submit",
     disabled: false,

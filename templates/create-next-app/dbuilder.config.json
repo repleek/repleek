@@ -1,36 +1,28 @@
 {
-	"name": "create-next-app",
-	"paths": {
-		"library": "src/library",
-		"theme": {
-			"light": "src/theme/light.json",
-			"dark": "src/theme/dark.json"
-		},
-		"assets": "public",
-		"locales": "src/locales"
-	},
-	"description": "",
-	"i18n": {
-		"supports": [
-			{
-				"value": "gb",
-				"label": "England"
-			},
-			{
-				"value": "fr",
-				"label": "France"
-			},
-			{
-				"value": "es",
-				"label": "Spain"
-			},
-			{
-				"value": "al",
-				"label": "Albania"
-			}
-		]
-	},
-	"versions": {
-		"builder": "0.1.11"
-	}
+  "name": "next-app",
+  "paths": {
+    "library": "src/library",
+    "theme": {
+      "light": "src/theme/light.json",
+      "dark": "src/theme/dark.json"
+    },
+    "assets": "public",
+    "locales": "src/locales"
+  },
+  "description": "",
+  "i18n": {
+    "supports": [
+      {
+        "value": "fr",
+        "label": "France"
+      },
+      {
+        "value": "gb",
+        "label": "England"
+      }
+    ]
+  },
+  "versions": {
+    "builder": "0.1.11"
+  }
 }

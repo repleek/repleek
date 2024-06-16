@@ -1,5 +1,6 @@
-/** Generated automaticaly by dbuilder */
+/** Generated automaticaly by repleek */
 /** IMPORT Start */
+"use client";
 import React from "react";
 
 import {
@@ -16,15 +17,15 @@ import {
 /** TYPE DEFINITION Start */
 type ModalContentProps = {
   email: TypographyProps & {
-    email?: string;
-  };
+    email?: string,
+  },
 };
 
 type DefaultProps = {
-  ROOT: BoxProps;
-  heyfax: TypographyProps;
-  mvdesp: IconProps;
-  bsmsna: BoxProps;
+  ROOT: BoxProps,
+  swyems: TypographyProps,
+  iwvqpm: IconProps,
+  rniwlh: BoxProps,
 };
 
 /** TYPE DEFINITION End */
@@ -32,13 +33,13 @@ type DefaultProps = {
 /** COMPONENT Start */
 const ModalContent: React.FC<ModalContentProps> = (props) => {
   const { email } = props;
-  const { ROOT, heyfax, mvdesp, bsmsna } = defaultProps;
+  const { ROOT, swyems, iwvqpm, rniwlh } = defaultProps;
 
   return (
     <Box {...ROOT}>
-      <Icon {...mvdesp} />
-      <Box {...bsmsna}>
-        <Typography {...heyfax} {...email} />
+      <Icon {...iwvqpm} />
+      <Box {...rniwlh}>
+        <Typography {...swyems} {...email} />
       </Box>
     </Box>
   );
@@ -63,20 +64,20 @@ const defaultProps: DefaultProps = {
       alignItems: "center",
     },
   },
-  heyfax: {
+  swyems: {
     variant: "h3",
     text: "😜 Thank you for your registration <b>{{email}}</b>",
     gutterBottom: false,
     noWrap: false,
     css: { fontSize: "22px", lineHeight: "31px" },
   },
-  mvdesp: {
+  iwvqpm: {
     color: "inherit",
     icon: { name: "IoRocketOutline", library: "io5" },
     fontSize: "inherit",
     css: { fontSize: "46px" },
   },
-  bsmsna: { tag: "div", css: { flexGrow: "1", paddingLeft: "12px" } },
+  rniwlh: { tag: "div", css: { flexGrow: "1", paddingLeft: "12px" } },
 };
 
 /** DEFAULT PROPS End */

@@ -1,3 +1,4 @@
+"use client";
 import Head from "next/head";
 import { Footer, Home, ModalContent } from "@/library";
 import { Dialog } from "@mui/material";

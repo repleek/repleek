@@ -1,5 +1,6 @@
-/** Generated automaticaly by dbuilder */
+/** Generated automaticaly by repleek */
 /** IMPORT Start */
+"use client";
 import React from "react";
 
 import { Box, BoxProps, Typography, TypographyProps } from "@repleek/mui";
@@ -10,19 +11,19 @@ import { Box, BoxProps, Typography, TypographyProps } from "@repleek/mui";
 type FooterProps = {};
 
 type DefaultProps = {
-  ROOT: BoxProps;
-  qkpceq: TypographyProps;
+  ROOT: BoxProps,
+  qaksrs: TypographyProps,
 };
 
 /** TYPE DEFINITION End */
 
 /** COMPONENT Start */
 const Footer: React.FC<FooterProps> = (props) => {
-  const { ROOT, qkpceq } = defaultProps;
+  const { ROOT, qaksrs } = defaultProps;
 
   return (
     <Box {...ROOT}>
-      <Typography {...qkpceq} />
+      <Typography {...qaksrs} />
     </Box>
   );
 };
@@ -35,14 +36,9 @@ export default Footer;
 const defaultProps: DefaultProps = {
   ROOT: {
     tag: "div",
-    css: {
-      backgroundColor: "rgba(38, 45, 52, 1)",
-      textAlign: "center",
-      paddingTop: "8px",
-      paddingBottom: "8px",
-    },
+    css: { textAlign: "center", paddingTop: "8px", paddingBottom: "8px" },
   },
-  qkpceq: {
+  qaksrs: {
     variant: "overline",
     text: "Copyright © 2023 dbuilder. All rights reserved. ",
     gutterBottom: false,

@@ -1,6 +1,6 @@
 {
   "palette": {
-    "mode": "dark",
+    "mode": "light",
     "primary": {
       "main": "#00c0ba"
     },
@@ -8,8 +8,8 @@
       "main": "#AFAFD3"
     },
     "background": {
-      "paper": "#14181B",
-      "default": "#14181B"
+      "paper": "#404C5E",
+      "default": "#222831"
     }
   },
   "typography": {
@@ -51,6 +51,13 @@
         },
         "textColorPrimary": {
           "color": "white !important"
+        }
+      }
+    },
+    "MuiDialog": {
+      "styleOverrides": {
+        "paper": {
+          "backgroundImage": "none"
         }
       }
     }
