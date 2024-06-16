@@ -1,6 +1,5 @@
 /** Generated automaticaly by repleek */
 /** IMPORT Start */
-"use client";
 import React from "react";
 
 import { Box, BoxProps, Typography, TypographyProps } from "@repleek/mui";
@@ -11,8 +10,8 @@ import { Box, BoxProps, Typography, TypographyProps } from "@repleek/mui";
 type FooterProps = {};
 
 type DefaultProps = {
-  ROOT: BoxProps,
-  qaksrs: TypographyProps,
+  ROOT: BoxProps;
+  qaksrs: TypographyProps;
 };
 
 /** TYPE DEFINITION End */

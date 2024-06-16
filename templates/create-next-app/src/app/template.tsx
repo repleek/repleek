@@ -7,7 +7,11 @@ import themes from "@/theme";
 export default function Template({ children }: { children: React.ReactNode }) {
   const router = useRouter();
   return (
-    <RepleekProvider push={router.push} i18n={i18n} themes={themes}>
+    <RepleekProvider
+      push={router.push}
+      i18n={i18n}
+      themes={themes}
+      defaultColor="dark">
       {children}
     </RepleekProvider>
   );

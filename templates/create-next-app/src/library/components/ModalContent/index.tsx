@@ -1,6 +1,6 @@
 /** Generated automaticaly by repleek */
 /** IMPORT Start */
-"use client";
+
 import React from "react";
 
 import {
@@ -17,15 +17,15 @@ import {
 /** TYPE DEFINITION Start */
 type ModalContentProps = {
   email: TypographyProps & {
-    email?: string,
-  },
+    email?: string;
+  };
 };
 
 type DefaultProps = {
-  ROOT: BoxProps,
-  swyems: TypographyProps,
-  iwvqpm: IconProps,
-  rniwlh: BoxProps,
+  ROOT: BoxProps;
+  swyems: TypographyProps;
+  iwvqpm: IconProps;
+  rniwlh: BoxProps;
 };
 
 /** TYPE DEFINITION End */
