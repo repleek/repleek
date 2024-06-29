@@ -1,5 +1,5 @@
 {
-  "name": "next-app",
+  "name": "create-next-app",
   "paths": {
     "library": "src/library",
     "theme": {
