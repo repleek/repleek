@@ -9,6 +9,7 @@
     "assets": "public",
     "locales": "src/locales"
   },
+  "defaultTheme": "dark",
   "description": "",
   "i18n": {
     "supports": [

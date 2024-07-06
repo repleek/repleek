@@ -10,6 +10,7 @@
     "locales": "src/locales"
   },
   "description": "",
+  "defaultTheme": "dark",
   "i18n": {
     "supports": [
       {
