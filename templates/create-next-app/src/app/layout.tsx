@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
-
-const inter = Inter({ subsets: ["latin"] });
+import repleek from "repleek.json";
+import { useMemo } from "react";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,9 +13,18 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const fonts = useMemo(
+    () =>
+      Object.entries(repleek.fonts).map(([name, link]) => (
+        <link href={link} rel="stylesheet" key={name} />
+      )),
+    []
+  );
+
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <head>{fonts}</head>
+      <body>
         <AppRouterCacheProvider>{children}</AppRouterCacheProvider>
       </body>
     </html>

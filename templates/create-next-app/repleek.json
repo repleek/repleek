@@ -11,6 +11,7 @@
   },
   "defaultTheme": "dark",
   "description": "",
+  "template": "next-app",
   "i18n": {
     "supports": [
       {
@@ -23,7 +24,10 @@
       }
     ]
   },
+  "fonts": {
+    "Aclonica": "https://fonts.googleapis.com/css2?family=Aclonica:ital,wght@0,400"
+  },
   "versions": {
-    "builder": "0.1.11"
+    "builder": "0.2.10"
   }
 }

@@ -1,48 +1,33 @@
-/** Generated automaticaly by repleek */
-/** IMPORT Start */
+/** Build with repleek */
+// #region Import
 import React from "react";
 
-import { Box, BoxProps, Typography, TypographyProps } from "@repleek/mui";
+import { Box, BoxProps, Typography } from "@repleek/mui";
+// #endregion
 
-/** IMPORT End */
+// #region Typre Definition
+type FooterProps = Partial<BoxProps> & {};
+// #endregion
 
-/** TYPE DEFINITION Start */
-type FooterProps = {};
-
-type DefaultProps = {
-  ROOT: BoxProps;
-  qaksrs: TypographyProps;
-};
-
-/** TYPE DEFINITION End */
-
-/** COMPONENT Start */
+// #region FooterComponent
 const Footer: React.FC<FooterProps> = (props) => {
-  const { ROOT, qaksrs } = defaultProps;
+  const { ...rootProps } = props;
 
   return (
-    <Box {...ROOT}>
-      <Typography {...qaksrs} />
+    <Box
+      tag={"div"}
+      css={{ textAlign: "center", paddingTop: "8px", paddingBottom: "8px" }}
+      {...rootProps}
+    >
+      <Typography
+        variant={"overline"}
+        text={"Copyright © 2023 dbuilder. All rights reserved. "}
+        gutterBottom={false}
+        noWrap={false}
+      />
     </Box>
   );
 };
 
 export default Footer;
-
-/** COMPONENT End */
-
-/** DEFAULT PROPS Start */
-const defaultProps: DefaultProps = {
-  ROOT: {
-    tag: "div",
-    css: { textAlign: "center", paddingTop: "8px", paddingBottom: "8px" },
-  },
-  qaksrs: {
-    variant: "overline",
-    text: "Copyright © 2023 dbuilder. All rights reserved. ",
-    gutterBottom: false,
-    noWrap: false,
-  },
-};
-
-/** DEFAULT PROPS End */
+// #endregion

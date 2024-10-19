@@ -1,0 +1,30 @@
+{
+	"name": "create-react-app",
+	"paths": {
+		"library": "src/library",
+		"theme": {
+			"light": "src/theme/light.json",
+			"dark": "src/theme/dark.json"
+		},
+		"assets": "public",
+		"locales": "src/locales"
+	},
+	"description": "",
+	"defaultTheme": "dark",
+	"template": "react-app",
+	"i18n": {
+		"supports": [
+			{
+				"value": "gb",
+				"label": "England"
+			},
+			{
+				"value": "fr",
+				"label": "France"
+			}
+		]
+	},
+	"versions": {
+		"builder": "0.2.10"
+	}
+}

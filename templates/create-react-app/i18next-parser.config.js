@@ -1,5 +1,5 @@
 const path = require("path");
-const dbuilderConfig = require("./dbuilder.config.json");
+const dbuilderConfig = require("./repleek.json");
 
 function getLocales() {
   if (dbuilderConfig && dbuilderConfig.i18n && dbuilderConfig.i18n.supports) {

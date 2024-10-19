@@ -1,83 +1,56 @@
-/** Generated automaticaly by repleek */
-/** IMPORT Start */
-
+/** Build with repleek */
+// #region Import
 import React from "react";
 
-import {
-  Box,
-  BoxProps,
-  Icon,
-  IconProps,
-  Typography,
-  TypographyProps,
-} from "@repleek/mui";
+import { Box, BoxProps, Icon, Typography, TypographyProps } from "@repleek/mui";
+// #endregion
 
-/** IMPORT End */
-
-/** TYPE DEFINITION Start */
-type ModalContentProps = {
+// #region Typre Definition
+type ModalContentProps = Partial<BoxProps> & {
   email: TypographyProps & {
-    email?: string;
-  };
+    email?: string,
+  },
 };
+// #endregion
 
-type DefaultProps = {
-  ROOT: BoxProps;
-  swyems: TypographyProps;
-  iwvqpm: IconProps;
-  rniwlh: BoxProps;
-};
-
-/** TYPE DEFINITION End */
-
-/** COMPONENT Start */
+// #region ModalContentComponent
 const ModalContent: React.FC<ModalContentProps> = (props) => {
-  const { email } = props;
-  const { ROOT, swyems, iwvqpm, rniwlh } = defaultProps;
+  const { email, ...rootProps } = props;
 
   return (
-    <Box {...ROOT}>
-      <Icon {...iwvqpm} />
-      <Box {...rniwlh}>
-        <Typography {...swyems} {...email} />
+    <Box
+      tag={"div"}
+      css={{
+        width: "480px",
+        minHeight: "239px",
+        backgroundColor: "rgba(20, 24, 27, 1)",
+        borderRadius: "4px",
+        paddingLeft: "16px",
+        paddingRight: "16px",
+        display: "flex",
+        alignItems: "center",
+      }}
+      {...rootProps}
+    >
+      <Icon
+        color={"inherit"}
+        icon={{ name: "IoRocketOutline", library: "io5" }}
+        fontSize={"inherit"}
+        css={{ fontSize: "46px" }}
+      />
+      <Box tag={"div"} css={{ flexGrow: "1", paddingLeft: "12px" }}>
+        <Typography
+          variant={"h3"}
+          text={"😜 Thank you for your registration <b>{{email}}</b>"}
+          gutterBottom={false}
+          noWrap={false}
+          css={{ fontSize: "22px", lineHeight: "31px" }}
+          {...email}
+        />
       </Box>
     </Box>
   );
 };
 
 export default ModalContent;
-
-/** COMPONENT End */
-
-/** DEFAULT PROPS Start */
-const defaultProps: DefaultProps = {
-  ROOT: {
-    tag: "div",
-    css: {
-      width: "480px",
-      minHeight: "239px",
-      backgroundColor: "rgba(20, 24, 27, 1)",
-      borderRadius: "4px",
-      paddingLeft: "16px",
-      paddingRight: "16px",
-      display: "flex",
-      alignItems: "center",
-    },
-  },
-  swyems: {
-    variant: "h3",
-    text: "😜 Thank you for your registration <b>{{email}}</b>",
-    gutterBottom: false,
-    noWrap: false,
-    css: { fontSize: "22px", lineHeight: "31px" },
-  },
-  iwvqpm: {
-    color: "inherit",
-    icon: { name: "IoRocketOutline", library: "io5" },
-    fontSize: "inherit",
-    css: { fontSize: "46px" },
-  },
-  rniwlh: { tag: "div", css: { flexGrow: "1", paddingLeft: "12px" } },
-};
-
-/** DEFAULT PROPS End */
+// #endregion
